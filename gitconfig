@@ -17,7 +17,7 @@
 
     # Github is sorting the commits by their date -> reset it on rebase
     # http://stackoverflow.com/questions/1579643/change-timestamps-while-rebasing-git-branch
-    ri = rebase --interactive --autosquash --ignore-date
+    ri = rebase --interactive --autosquash --ignore-date origin/master
     amend = !sh -c 'git commit --amend --no-edit' -
 
     d = diff --color
@@ -65,10 +65,8 @@
     newNormal = green
     newHighlight = green 22
 
-[pager]
-    diff = diff-so-fancy | less --tabs=4 -RFX
-    show = diff-so-fancy | less --tabs=4 -RFX
-
 [interactive]
     diffFilter = diff-so-fancy | less --tabs=4 -RFX
 
+[fetch]
+	recurseSubmodules = false
