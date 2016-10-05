@@ -9,7 +9,7 @@
 
 dir=~/dotfiles                    # dotfiles directory
 olddir=~/dotfiles_old             # old dotfiles backup directory
-files="gitconfig"    # list of files/folders to symlink in homedir
+files="gitconfig tmux.conf tmux.style"    # list of files/folders to symlink in homedir
 
 ##########
 

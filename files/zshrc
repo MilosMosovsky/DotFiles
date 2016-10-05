@@ -1,0 +1,23 @@
+
+# Path to your oh-my-zsh installation.
+export ZSH=/Users/Milos/.oh-my-zsh
+
+# Set name of the theme to load. Optionally, if you set this to "random"
+# it'll load a random theme each time that oh-my-zsh is loaded.
+# See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
+ZSH_THEME="robbyrussell"
+
+plugins=(git tmux)
+ZSH_TMUX_AUTOSTART=false
+ZSH_TMUX_AUTOCONNECT=false
+
+LS_COLORS=true
+
+# Prezto init
+setopt EXTENDED_GLOB
+if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
+  source "${ZDOTDIR:-$HOME}/.zprezto/init.zsh"
+fi
+
+source $ZSH/oh-my-zsh.sh
+

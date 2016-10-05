@@ -1,6 +1,6 @@
 [user]
-	  name = Milos Mosovsky
-	  email = milos.mosovsky@toptal.com
+	name = Milos Mosovsky
+	email = milos.mosovsky@toptal.com
 
 [alias]
     st = status
@@ -34,7 +34,7 @@
 
 [core]
     editor = nano
-	  excludesfile = /Users/z/.gitignore_global
+	excludesfile = /Users/Milos/.gitignore
 
 [push]
     default = simple
@@ -70,3 +70,7 @@
 
 [fetch]
 	recurseSubmodules = false
+[filter "lfs"]
+	clean = git-lfs clean %f
+	smudge = git-lfs smudge %f
+	required = true

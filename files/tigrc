@@ -1,0 +1,2 @@
+bind generic <C-F> !@sh -c "git add . && git fixup %(commit)"
+bind main <C-R> !git rebase -i --autosquash %(commit)
