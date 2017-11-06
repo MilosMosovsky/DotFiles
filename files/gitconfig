@@ -7,7 +7,7 @@
     ci = commit
     co = checkout
     br = branch
-    pushff = push -f origin
+    pushff = push --force-with-lease origin
 
     l = log --pretty=format:'%Cred%h%Creset %Cgreen%s%Creset [%ar by %an]'
     lg = log --graph --pretty=format:'%C(red)%h%C(reset) -%C(yellow)%d%C(reset) %s %C(green)(%cr) %C(blue)<%an>%C(reset)' --abbrev-commit --date=relative
@@ -33,8 +33,9 @@
     ui = auto
 
 [core]
-    editor = nano
+  editor = nano
 	excludesfile = /Users/Milos/.gitignore
+	autocrlf = input
 
 [push]
     default = simple
@@ -70,7 +71,16 @@
 
 [fetch]
 	recurseSubmodules = false
+
 [filter "lfs"]
 	clean = git-lfs clean %f
 	smudge = git-lfs smudge %f
 	required = true
+
+[difftool "sourcetree"]
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+	path =
+
+[mergetool "sourcetree"]
+	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	trustExitCode = true
