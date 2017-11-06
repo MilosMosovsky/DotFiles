@@ -7,9 +7,10 @@ export ZSH=/Users/Milos/.oh-my-zsh
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
 ZSH_THEME="robbyrussell"
 
-plugins=(git tmux)
-ZSH_TMUX_AUTOSTART=false
-ZSH_TMUX_AUTOCONNECT=false
+plugins=(git)
+#plugins=(git tmux)
+#ZSH_TMUX_AUTOSTART=false
+#ZSH_TMUX_AUTOCONNECT=false
 
 LS_COLORS=true
 
@@ -21,3 +22,10 @@ fi
 
 source $ZSH/oh-my-zsh.sh
 
+
+# Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
+export PATH="$PATH:$HOME/.rvm/bin"
+source $HOME/.rvm/scripts/rvm
+
+export NVM_DIR="/Users/Milos/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
