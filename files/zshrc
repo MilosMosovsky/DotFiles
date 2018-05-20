@@ -43,6 +43,6 @@ export NVM_DIR="$HOME/.nvm/"
 export PATH="$PATH:/Applications/Visual Studio Code.app/Contents/Resources/app/bin"
 
 ## custom variables
-export ANSIBLE_USER=mmilos
+export ANSIBLE_USER=milos.mosovsky
 
 eval "$(direnv hook $SHELL)"
