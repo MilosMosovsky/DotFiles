@@ -1,3 +1,6 @@
+[include]
+  path = ~/.private/gitconfig
+
 [user]
 	name = Milos Mosovsky
 	email = milos.mosovsky@toptal.com
@@ -86,6 +89,6 @@
 	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
 	trustExitCode = true
 [commit]
-	gpgsign = false
+	gpgsign = true
 [gpg]
 	program = gpg2
