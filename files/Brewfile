@@ -1,0 +1,8 @@
+brew "autoconf"
+brew "automake"
+brew "cmake"
+brew "git"
+brew "htop"
+brew "tig"
+brew "tmux", args: ["HEAD"]
+brew "zsh"
