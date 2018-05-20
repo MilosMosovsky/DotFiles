@@ -6,3 +6,5 @@ brew "htop"
 brew "tig"
 brew "tmux", args: ["HEAD"]
 brew "zsh"
+brew "gnupg"
+brew "gnupg2"
