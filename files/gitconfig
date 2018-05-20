@@ -1,9 +1,6 @@
-[include]
-  path = ~/.private/gitconfig
-
 [user]
-	name = Milos Mosovsky
 	email = milos.mosovsky@toptal.com
+    name = Milos Mosovsky
 
 [alias]
     st = status
@@ -92,3 +89,7 @@
 	gpgsign = true
 [gpg]
 	program = gpg
+    
+[include]
+    path = ~/.private/.gitconfig
+
